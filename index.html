@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta Cassino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Roleta Cassino</h1>
+    <div id="roulette-wheel">
+        <img src="roulette-wheel.png" alt="Roda da Roleta">
+    </div>
+    <table id="betting-table">
+        <tr>
+            <td colspan="12">Números</td>
+        </tr>
+        <tr>
+            <td data-type="number" data-value="1">1</td>
+            <td data-type="number" data-value="2">2</td>
+            <td data-type="number" data-value="3">3</td>
+            <td data-type="number" data-value="4">4</td>
+            <td data-type="number" data-value="5">5</td>
+            <td data-type="number" data-value="6">6</td>
+            <td data-type="number" data-value="7">7</td>
+            <td data-type="number" data-value="8">8</td>
+            <td data-type="number" data-value="9">9</td>
+            <td data-type="number" data-value="10">10</td>
+            <td data-type="number" data-value="11">11</td>
+            <td data-type="number" data-value="12">12</td>
+        </tr>
+        <!-- Para simplificar, incluí apenas até o 12, mas você pode expandir até 36 -->
+        <tr>
+            <td colspan="6" data-type="color" data-value="red">Vermelho</td>
+            <td colspan="6" data-type="color" data-value="black">Preto</td>
+        </tr>
+        <tr>
+            <td colspan="6" data-type="parity" data-value="even">Par</td>
+            <td colspan="6" data-type="parity" data-value="odd">Ímpar</td>
+        </tr>
+    </table>
+    <button id="spin-button">Girar</button>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
